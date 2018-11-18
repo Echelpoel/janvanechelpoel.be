@@ -9,6 +9,7 @@ const Page = ({ children }) => (
             <title>{SITE_TITLE}</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <meta name="description" content={SITE_DESCRIPTION} />
+            <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico" />
         </Head>
         {children}
         <style jsx global>{`
