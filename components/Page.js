@@ -54,6 +54,7 @@ const Page = ({ children }) => (
                 font-size: ${theme.defaultFontSize};
                 margin: 0;
                 line-height: ${theme.defaultLineHeight};
+                background-color: ${theme.colorDark};
             }
 
             a {
@@ -63,6 +64,36 @@ const Page = ({ children }) => (
 
             a:hover {
                 color: ${theme.colorPrimary};
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: ${theme.colorDark};
+            }
+
+            h1 {
+                font-size: 5.6rem;
+                font-weight: ${theme.fontWeightBold};
+                line-height: 1.2;
+            }
+
+            h2 {
+                font-size: 3.6rem;
+                font-weight: ${theme.fontWeightBold};
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 2.3rem;
+                font-weight: ${theme.fontWeightMedium};
+                margin: 0;
             }
         `}</style>
     </Fragment>
