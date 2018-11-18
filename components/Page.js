@@ -13,6 +13,30 @@ const Page = ({ children }) => (
         </Head>
         {children}
         <style jsx global>{`
+            @font-face {
+                font-family: 'InterUI';
+                src: url('/static/fonts/InterUI-Bold.woff2') format('woff2'),
+                    url('/static/fonts/InterUI-Bold.woff') format('woff');
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'InterUI';
+                src: url('/static/fonts/InterUI-Medium.woff2') format('woff2'),
+                    url('/static/fonts/InterUI-Medium.woff') format('woff');
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'InterUI';
+                src: url('/static/fonts/InterUI-Regular.woff2') format('woff2'),
+                    url('/static/fonts/InterUI-Regular.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
             /*
                 1. Prevent padding and border from affecting element width https://goo.gl/pYtbK7
                 2. The base font-size is set at 62.5% for having the convenience of sizing rems in a way that is similar to using px: 1.6rem = 16px
