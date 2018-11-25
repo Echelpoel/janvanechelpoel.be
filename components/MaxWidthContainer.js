@@ -6,6 +6,7 @@ const MaxWidthContainer = ({ children }) => (
         <style jsx>{`
             max-width: ${theme.maxWidth};
             margin: auto;
+            padding: 0 2rem;
         `}</style>
     </div>
 )

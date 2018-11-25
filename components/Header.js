@@ -9,6 +9,7 @@ import {
     CTA_TEXT,
 } from 'constants/header'
 import * as theme from 'styles/theme'
+import * as media from 'styles/media'
 
 const Header = () => (
     <header>
@@ -81,6 +82,28 @@ const Header = () => (
                 color: ${theme.colorPrimary};
                 font-weight: ${theme.fontWeightBold};
                 font-size: 2rem;
+            }
+
+            @media ${media.largeDown} {
+                .contentContainer {
+                    width: auto;
+                }
+            }
+
+            @media ${media.xsmallOnly} {
+                nav {
+                    display: block;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 3.6rem;
+                }
+
+                p.subHeading {
+                    font-size: 1.8rem;
+                    padding: 0;
+                }
             }
         `}</style>
     </header>

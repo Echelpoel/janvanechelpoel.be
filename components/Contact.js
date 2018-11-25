@@ -6,6 +6,7 @@ import {
     CONTACT_BUTTON_TEXT,
     CONTACT_BUTTON_URL,
 } from 'constants/contact'
+import * as media from 'styles/media'
 
 const Contact = () => (
     <section>
@@ -29,6 +30,16 @@ const Contact = () => (
             .contactText {
                 font-size: 2.1rem;
                 margin-bottom: 5rem;
+            }
+
+            @media ${media.xsmallOnly} {
+                h2 {
+                    font-size: 2.8rem;
+                }
+
+                .contactText {
+                    font-size: 1.8rem;
+                }
             }
         `}</style>
     </section>

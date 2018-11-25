@@ -1,5 +1,6 @@
 import MaxWidthContainer from 'components/MaxWidthContainer'
 import * as theme from 'styles/theme'
+import * as media from 'styles/media'
 
 const FlinderImages = () => (
     <div className="container">
@@ -24,6 +25,13 @@ const FlinderImages = () => (
 
             img {
                 width: 100%;
+            }
+
+            @media ${media.xlargeDown} {
+                .container {
+                    height: auto;
+                    padding-bottom: 12rem;
+                }
             }
         `}</style>
     </div>

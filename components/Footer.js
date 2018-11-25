@@ -1,7 +1,8 @@
 import MaxWidthContainer from 'components/MaxWidthContainer'
 import SocialLinkList from 'components/SocialLinkList'
-import * as theme from 'styles/theme'
 import { COPYRIGHT_TEXT } from 'constants/global'
+import * as theme from 'styles/theme'
+import * as media from 'styles/media'
 
 const Footer = () => (
     <footer>
@@ -28,6 +29,13 @@ const Footer = () => (
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+            }
+
+            @media ${media.xsmallOnly} {
+                .contentContainer {
+                    display: block;
+                    text-align: center;
+                }
             }
         `}</style>
     </footer>

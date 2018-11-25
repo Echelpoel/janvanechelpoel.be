@@ -1,4 +1,5 @@
 import * as theme from 'styles/theme'
+import * as media from 'styles/media'
 
 const Button = ({
     text,
@@ -24,6 +25,13 @@ const Button = ({
 
             a:hover {
                 color: #FFFFFF;
+            }
+
+            @media ${media.xsmallOnly} {
+                a {
+                    min-width: auto;
+                    width: 100%;
+                }
             }
         `}</style>
     </a>
