@@ -1,7 +1,12 @@
 import { Fragment } from 'react'
 import Head from 'next/head'
 import * as theme from 'styles/theme'
-import { SITE_TITLE, SITE_DESCRIPTION } from 'constants/global'
+import {
+    SITE_TITLE,
+    SITE_DESCRIPTION,
+    SITE_NAME,
+    SITE_URL,
+} from 'constants/global'
 
 const Page = ({ children }) => (
     <Fragment>
@@ -10,6 +15,16 @@ const Page = ({ children }) => (
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <meta name="description" content={SITE_DESCRIPTION} />
             <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico" />
+            <meta property="og:type" content="website" />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:url" content={SITE_URL} />
+            <meta property="og:title" content={SITE_TITLE} />
+            <meta property="og:description" content={SITE_DESCRIPTION} />
+            <meta property="og:image" content="https://janvanechelpoel.be/static/img/social.jpg" />
+            <meta property="og:image:type" content="image/jpeg" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:site_name" content={SITE_NAME} />
         </Head>
         {children}
         <style jsx global>{`

@@ -1,6 +1,7 @@
 export const SITE_TITLE = 'Jan Van Echelpoel';
 export const SITE_DESCRIPTION = `I'm a self-employed mobile/web app  developer and UI/UX dedesigner based in Antwerp, Belgium.`;
 export const SITE_NAME = 'Jan Van Echelpoel';
+export const SITE_URL = 'https://janvanechelpoel.be';
 export const SOCIAL_LINKS = [{
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/echlpl/',
