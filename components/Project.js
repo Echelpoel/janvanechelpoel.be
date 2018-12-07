@@ -3,6 +3,7 @@ import * as theme from 'styles/theme'
 
 const Project = ({
     renderImages,
+    iconUrl,
     title,
     subtitle,
     description,
@@ -11,9 +12,16 @@ const Project = ({
     <section>
         {renderImages()}
         <MaxWidthContainer>
-            <div className="metaContainer">
-                <h3>{title}</h3>
-                <div className="subtitle">{subtitle}</div>
+            <div className="descriptionContainer">
+                <div className="metaContainer">
+                    <div className="iconContainer">
+                        <img src={iconUrl} alt={title} />
+                    </div>
+                    <div>
+                        <h3>{title}</h3>
+                        <div className="subtitle">{subtitle}</div>
+                    </div>
+                </div>
                 <p>{description}</p>
                 <ul>
                     {links.map(link => (
@@ -29,10 +37,24 @@ const Project = ({
                 background-color: #FFFFFF;
             }
 
-            .metaContainer {
+            .descriptionContainer {
                 padding: 5rem 0;
                 padding-left: 2rem;
             }
+
+            .metaContainer {
+                display: flex;
+                align-items: top;
+                justify-content: flex-start;
+            }
+
+            .iconContainer {
+                margin-right: 1.5rem;
+            }
+
+            .iconContainer img {
+                width: 6rem;
+            } 
 
             .subtitle {
                 text-transform: uppercase;
