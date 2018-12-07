@@ -6,7 +6,7 @@ const FlinderImages = () => (
     <div className="container">
         <MaxWidthContainer>
             <div className="imagesContainer">
-                <img src="/static/img/projects/beatswitch-01.png" />
+                <img src="/static/img/projects/beatswitch/beatswitch-01.png" />
             </div>
         </MaxWidthContainer>
         <style jsx>{`

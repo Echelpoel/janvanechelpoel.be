@@ -6,10 +6,10 @@ const FlinderImages = () => (
     <div className="container">
         <MaxWidthContainer>
             <div className="imagesContainer">
-                <img src="/static/img/projects/flinder-01.png" />
-                <img src="/static/img/projects/flinder-02.png" />
-                <img src="/static/img/projects/flinder-03.png" />
-                <img src="/static/img/projects/flinder-04.png" />
+                <img src="/static/img/projects/flinder/flinder-01.png" />
+                <img src="/static/img/projects/flinder/flinder-02.png" />
+                <img src="/static/img/projects/flinder/flinder-03.png" />
+                <img src="/static/img/projects/flinder/flinder-04.png" />
             </div>
         </MaxWidthContainer>
         <style jsx>{`
