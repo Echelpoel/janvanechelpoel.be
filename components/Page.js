@@ -25,6 +25,18 @@ const Page = ({ children }) => (
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
             <meta property="og:site_name" content={SITE_NAME} />
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37968019-1"></script>
+            <script dangerouslySetInnerHTML={{
+                    __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                    
+                        gtag('config', 'UA-37968019-1');
+                    `
+                }}
+            />
         </Head>
         {children}
         <style jsx global>{`
