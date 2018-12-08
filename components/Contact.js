@@ -18,7 +18,7 @@ const Contact = () => (
         <style jsx>{`
             section {
                 background-color: #FFFFFF;
-                padding-top: 20rem;
+                padding-top: 10rem;
                 padding-bottom: 10rem;
                 text-align: center;
             }
@@ -30,6 +30,12 @@ const Contact = () => (
             .contactText {
                 font-size: 2.1rem;
                 margin-bottom: 5rem;
+            }
+
+            @media ${media.smallOnly} {
+                section {
+                    padding-top: 4rem;
+                }
             }
 
             @media ${media.xsmallOnly} {

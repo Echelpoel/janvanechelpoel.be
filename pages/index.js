@@ -4,6 +4,7 @@ import Project from 'components/Project'
 import FlinderImages from 'components/projects/FlinderImages'
 import BeatswitchImages from 'components/projects/BeatswitchImages'
 import Contact from 'components/Contact'
+import Clients from 'components/Clients'
 import Footer from 'components/Footer'
 import {
     FLINDER_TITLE,
@@ -39,6 +40,7 @@ class HomePage extends React.Component {
                     description={BEATSWITCH_DESCRIPTION}
                     links={BEATSWITCH_LINKS}
                 />
+                <Clients />
                 <Contact />
                 <Footer />
             </Page>
@@ -47,4 +49,3 @@ class HomePage extends React.Component {
 };
 
 export default HomePage;
-

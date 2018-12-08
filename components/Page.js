@@ -89,7 +89,8 @@ const Page = ({ children }) => (
 
             h1,
             h2,
-            h3 {
+            h3,
+            h4 {
                 color: ${theme.colorDark};
             }
 
@@ -107,6 +108,12 @@ const Page = ({ children }) => (
 
             h3 {
                 font-size: 2.3rem;
+                font-weight: ${theme.fontWeightMedium};
+                margin: 0;
+            }
+
+            h4 {
+                font-size: 2.1rem;
                 font-weight: ${theme.fontWeightMedium};
                 margin: 0;
             }
