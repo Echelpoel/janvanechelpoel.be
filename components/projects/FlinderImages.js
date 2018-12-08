@@ -14,8 +14,7 @@ const FlinderImages = () => (
         </MaxWidthContainer>
         <style jsx>{`
             .container {
-                background-color: ${theme.colorLightest};
-                padding: 12rem 0;
+                padding-bottom: 12rem;
             }
 
             .imagesContainer {

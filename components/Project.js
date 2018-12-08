@@ -10,36 +10,47 @@ const Project = ({
     links,
 }) => (
     <section>
-        {renderImages()}
         <MaxWidthContainer>
-            <div className="descriptionContainer">
-                <div className="metaContainer">
-                    <div className="iconContainer">
-                        <img src={iconUrl} alt={title} />
+            <div className="projectHeader">
+                <div className="projectTop">
+                    <div className="metaContainer">
+                        <div className="iconContainer">
+                            <img src={iconUrl} alt={title} />
+                        </div>
+                        <div>
+                            <h3>{title}</h3>
+                            <div className="subtitle">{subtitle}</div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>{title}</h3>
-                        <div className="subtitle">{subtitle}</div>
-                    </div>
+                    <ul>
+                        {links.map(link => (
+                            <li key={link.id}>
+                                <a href={link.url} target="_blank">{link.text}</a>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
                 <p>{description}</p>
-                <ul>
-                    {links.map(link => (
-                        <li key={link.id}>
-                            <a href={link.url} target="_blank">{link.text}</a>
-                        </li>
-                    ))}
-                </ul>
             </div>
         </MaxWidthContainer>
+        {renderImages()}
         <style jsx>{`
             section {
-                background-color: #FFFFFF;
+                background-color: ${theme.colorLightest};
+                margin-bottom: 1.5rem;
+                color: ${theme.projectFontColor};
             }
 
-            .descriptionContainer {
-                padding: 5rem 0;
-                padding-left: 2rem;
+            .projectHeader {
+                padding: 12rem 2rem 8rem 2rem;
+            }
+
+            .projectTop {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 4rem;
+                border-bottom: .1rem solid ${theme.projectHeaderBorderColor};
             }
 
             .metaContainer {
@@ -63,7 +74,7 @@ const Project = ({
 
             p {
                 max-width: 760px;
-                margin: 4rem 0;
+                margin-top: 4rem;
             }
 
             ul li {

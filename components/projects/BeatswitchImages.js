@@ -12,7 +12,6 @@ const FlinderImages = () => (
         <style jsx>{`
             .container {
                 background-color: ${theme.colorLightest};
-                padding-top: 12rem;
                 height: 680px;
                 overflow: hidden;
             }

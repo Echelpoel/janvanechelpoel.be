@@ -24,25 +24,33 @@ class HomePage extends React.Component {
         return (
             <Page>
                 <Header />
-                <Project
-                    renderImages={FlinderImages}
-                    title={FLINDER_TITLE}
-                    iconUrl={`/static/img/projects/flinder/${FLINDER_ICON}`}
-                    subtitle={FLINDER_SUBTITLE}
-                    description={FLINDER_DESCRIPTION}
-                    links={FLINDER_LINKS}
-                />
-                <Project
-                    renderImages={BeatswitchImages}
-                    title={BEATSWITCH_TITLE}
-                    iconUrl={`/static/img/projects/beatswitch/${BEATSWITCH_ICON}`}
-                    subtitle={BEATSWITCH_SUBTITLE}
-                    description={BEATSWITCH_DESCRIPTION}
-                    links={BEATSWITCH_LINKS}
-                />
+                <div className="projectsContainer">
+                    <Project
+                        renderImages={FlinderImages}
+                        title={FLINDER_TITLE}
+                        iconUrl={`/static/img/projects/flinder/${FLINDER_ICON}`}
+                        subtitle={FLINDER_SUBTITLE}
+                        description={FLINDER_DESCRIPTION}
+                        links={FLINDER_LINKS}
+                    />
+                    <Project
+                        renderImages={BeatswitchImages}
+                        title={BEATSWITCH_TITLE}
+                        iconUrl={`/static/img/projects/beatswitch/${BEATSWITCH_ICON}`}
+                        subtitle={BEATSWITCH_SUBTITLE}
+                        description={BEATSWITCH_DESCRIPTION}
+                        links={BEATSWITCH_LINKS}
+                    />
+                </div>
                 <Clients />
                 <Contact />
                 <Footer />
+                <style jsx>{`
+                    .projectsContainer {
+                        background-color: #fff;
+                        padding-bottom: 1.5rem;
+                    }
+                `}</style>
             </Page>
         )
     }
