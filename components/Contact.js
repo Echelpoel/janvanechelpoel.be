@@ -18,7 +18,6 @@ const Contact = () => (
         <style jsx>{`
             section {
                 background-color: #FFFFFF;
-                padding-top: 10rem;
                 padding-bottom: 10rem;
                 text-align: center;
             }
