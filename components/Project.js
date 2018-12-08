@@ -1,5 +1,6 @@
 import MaxWidthContainer from 'components/MaxWidthContainer'
 import * as theme from 'styles/theme'
+import * as media from 'styles/media'
 
 const Project = ({
     renderImages,
@@ -89,6 +90,25 @@ const Project = ({
                 display: block;
                 margin-top: 1rem;
                 font-weight: ${theme.fontWeightBold};
+            }
+
+            @media ${media.smallOnly} {
+                .projectHeader {
+                    padding-bottom: 2rem;
+                }
+
+                .projectTop {
+                    display: block;
+                }
+
+                .projectTop ul {
+                    margin-top: 2rem;
+                }
+
+                .projectTop ul li {
+                    display: block;
+                    margin-right: 0;
+                }
             }
         `}</style>
     </section>
