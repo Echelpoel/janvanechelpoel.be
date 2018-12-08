@@ -21,4 +21,13 @@ export const BEATSWITCH_LINKS = [{
     id: 'visit-website',
     text: 'visit website',
     url: 'https://beatswitch.com',
-}]
+}];
+
+export const INNOVATIONWALL_TITLE = 'InnovationWall';
+export const INNOVATIONWALL_ICON = 'innovationwall-icon.png';
+export const INNOVATIONWALL_SUBTITLE = 'Front-end Development, UI/UX Design';
+export const INNOVATIONWALL_DESCRIPTION = 'Easy to use digital technology towards economic, environmental and social improvement. I was responsible for designing a UI for their new web app based on components and flows of their current mobile app.';
+export const INNOVATIONWALL_LINKS = [{
+    id: 'visit-website',
+    text: 'visit website',
+}];

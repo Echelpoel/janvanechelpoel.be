@@ -3,6 +3,7 @@ import Header from 'components/Header'
 import Project from 'components/Project'
 import FlinderImages from 'components/projects/FlinderImages'
 import BeatswitchImages from 'components/projects/BeatswitchImages'
+import InnovationWallImages from 'components/projects/InnovationWallImages'
 import Contact from 'components/Contact'
 import Clients from 'components/Clients'
 import Footer from 'components/Footer'
@@ -17,6 +18,11 @@ import {
     BEATSWITCH_SUBTITLE,
     BEATSWITCH_DESCRIPTION,
     BEATSWITCH_LINKS,
+    INNOVATIONWALL_TITLE,
+    INNOVATIONWALL_ICON,
+    INNOVATIONWALL_SUBTITLE,
+    INNOVATIONWALL_DESCRIPTION,
+    INNOVATIONWALL_LINKS,
 } from 'constants/projects'
 
 class HomePage extends React.Component {
@@ -40,6 +46,14 @@ class HomePage extends React.Component {
                         subtitle={BEATSWITCH_SUBTITLE}
                         description={BEATSWITCH_DESCRIPTION}
                         links={BEATSWITCH_LINKS}
+                    />
+                    <Project
+                        renderImages={InnovationWallImages}
+                        title={INNOVATIONWALL_TITLE}
+                        iconUrl={`/static/img/projects/innovationwall/${INNOVATIONWALL_ICON}`}
+                        subtitle={INNOVATIONWALL_SUBTITLE}
+                        description={INNOVATIONWALL_DESCRIPTION}
+                        links={INNOVATIONWALL_LINKS}
                     />
                 </div>
                 <Clients />
