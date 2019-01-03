@@ -1,4 +1,8 @@
 {
+    "version": 2,
     "name": "janvanechelpoel",
-    "alias": "janvanechelpoel.be"
+    "alias": "janvanechelpoel.be",
+    "builds": [
+        { "src": "next.config.js", "use": "@now/next" }
+    ]
 }
