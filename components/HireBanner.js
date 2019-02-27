@@ -1,10 +1,11 @@
-import * as theme from 'styles/theme'
 import IconArrowRight from 'components/icons/ArrowRight'
 import {
     HIRE_BANNER_TAG,
     HIRE_BANNER_TEXT,
     HIRE_BANNER_URL,
 } from 'constants/header'
+import * as theme from 'styles/theme'
+import * as media from 'styles/media'
 
 const HireBanner = () => (
     <a href={HIRE_BANNER_URL} className="banner">
@@ -55,6 +56,52 @@ const HireBanner = () => (
 
             a.banner:hover .icon-container {
                 transform: translateX(10px);
+            }
+
+            @media ${media.largeDown} {
+                a.banner {
+                    width: auto;
+                    max-width: 680px;
+                }
+            }
+
+            @media (max-width: 750px) {
+                a.banner {
+                    padding: 2.4rem;
+                }
+
+                .icon-container {
+                    margin-right: 0;
+                }
+            }
+
+            @media ${media.smallOnly} {
+                a.banner,
+                .tag {
+                    display: block;
+                }
+
+                a.banner {
+                    line-height: 1.6;
+                }
+                
+                .tag {
+                    max-width: 200px;
+                    margin: auto;
+                    margin-bottom: 1.6rem;
+                    line-height: 1;
+                }
+
+                .icon-container {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 420px) {
+                .tag {
+                    width: auto;
+                    max-width: none;
+                }
             }
         `}</style>
     </a>
