@@ -87,6 +87,7 @@ const Page = ({ children }) => (
             a {
                 text-decoration: none;
                 color: ${theme.colorDark};
+                transition: .3s cubic-bezier(.2, .8, .2, 1);
             }
 
             a:hover {

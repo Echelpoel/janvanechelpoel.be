@@ -29,7 +29,7 @@ const HireBanner = () => (
                 font-size: 1.5rem;
                 font-weight: ${theme.fontWeightMedium};
                 line-height: 1;
-                transition: .3s;
+                transition: .3s ;
             }
 
             a.banner:hover {
