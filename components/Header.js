@@ -81,9 +81,14 @@ const Header = () => (
             }
 
             .CTAContainer a {
+                border-bottom: .1rem dashed ${theme.colorPrimary};
                 color: ${theme.colorPrimary};
                 font-weight: ${theme.fontWeightBold};
                 font-size: 2rem;
+            }
+
+            .CTAContainer a:hover {
+                border-bottom: .1rem solid ${theme.colorPrimary};
             }
 
             @media ${media.largeDown} {
