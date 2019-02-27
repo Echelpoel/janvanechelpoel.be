@@ -30,4 +30,5 @@ export const INNOVATIONWALL_DESCRIPTION = 'Easy to use digital technology toward
 export const INNOVATIONWALL_LINKS = [{
     id: 'visit-website',
     text: 'visit website',
+    url: 'https://innovationwall.io',
 }];

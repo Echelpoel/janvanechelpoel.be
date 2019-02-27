@@ -4,6 +4,7 @@ export const colorGreyLight = '#E2E2E2';
 export const colorDark = '#303030';
 export const colorLightest = '#F5F6FA';
 export const colorPrimary = '#AF0AFC';
+export const colorPrimaryDark = '#9013FE';
 
 export const maxWidth = '1200px';
 

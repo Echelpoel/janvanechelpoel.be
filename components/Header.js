@@ -1,6 +1,7 @@
 import MaxWidthContainer from 'components/MaxWidthContainer'
 import SocialLinkList from 'components/SocialLinkList'
-import { SITE_NAME, SOCIAL_LINKS } from 'constants/global'
+import HireBanner from 'components/HireBanner'
+import { SITE_NAME } from 'constants/global'
 import {
     HEADING,
     SUBHEADING,
@@ -22,6 +23,7 @@ const Header = () => (
                 <img src="/static/img/me-lol.png" alt="le me" />
                 <h1>{HEADING}</h1>
                 <p className="subHeading">{SUBHEADING}</p>
+                <HireBanner />
                 <div className="CTAContainer">
                     <div className="CTALabel">{CTA_LABEL}</div>
                     <a href={CTA_URL}>{CTA_TEXT}</a>
@@ -79,9 +81,14 @@ const Header = () => (
             }
 
             .CTAContainer a {
+                border-bottom: .1rem dashed ${theme.colorPrimary};
                 color: ${theme.colorPrimary};
                 font-weight: ${theme.fontWeightBold};
                 font-size: 2rem;
+            }
+
+            .CTAContainer a:hover {
+                border-bottom: .1rem solid ${theme.colorPrimary};
             }
 
             @media ${media.largeDown} {

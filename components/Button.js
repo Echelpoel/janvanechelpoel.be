@@ -16,15 +16,17 @@ const Button = ({
                 min-width: 26rem;
                 background-color: ${theme.colorPrimary};
                 border-radius: 3rem;
-                color: #FFFFFF;
+                color: #fff;
                 font-size: 1.4rem;
                 text-transform: uppercase;
                 letter-spacing: .3rem;
                 font-weight: ${theme.fontWeightBold};
+                transition: .3s cubic-bezier(.2, .8, .2, 1);
             }
 
             a:hover {
-                color: #FFFFFF;
+                color: #fff;
+                background-color: ${theme.colorPrimaryDark};
             }
 
             @media ${media.xsmallOnly} {
