@@ -1,6 +1,6 @@
 import MaxWidthContainer from 'components/MaxWidthContainer'
 import SocialLinkList from 'components/SocialLinkList'
-import HireBanner from 'components/HireBanner'
+import BlogBanner from 'components/BlogBanner'
 import { SITE_NAME } from 'constants/global'
 import {
     HEADING,
@@ -23,7 +23,7 @@ const Header = () => (
                 <img src="/static/img/me-lol.png" alt="le me" />
                 <h1>{HEADING}</h1>
                 <p className="subHeading">{SUBHEADING}</p>
-                <HireBanner />
+                <BlogBanner />
                 <div className="CTAContainer">
                     <div className="CTALabel">{CTA_LABEL}</div>
                     <a href={CTA_URL}>{CTA_TEXT}</a>
