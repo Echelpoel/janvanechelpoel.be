@@ -20,7 +20,7 @@ const Header = () => (
                 <SocialLinkList />
             </nav>
             <div className="contentContainer">
-                <img src="/static/img/me-lol.png" alt="le me" />
+                <img src="/static/img/me-lol-2.png" alt="le moi" />
                 <h1>{HEADING}</h1>
                 <p className="subHeading">{SUBHEADING}</p>
                 <BlogBanner />
