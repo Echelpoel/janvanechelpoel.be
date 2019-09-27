@@ -1,11 +1,16 @@
 export const FLINDER_TITLE = 'Flinder';
 export const FLINDER_ICON = 'flinder-icon.png';
 export const FLINDER_SUBTITLE = 'Personal Project';
-export const FLINDER_DESCRIPTION = 'Flinder is a smart iOS app that helps you find top things to do nearby, based on your location, weather conditions and time. Written in React Native.';
+export const FLINDER_DESCRIPTION = 'Flinder is a free smart app that helps you find top things to do nearby, based on your location, weather conditions and time. Written in React Native.';
 export const FLINDER_LINKS = [{
-    id: 'download',
-    text: 'download',
+    id: 'download-ios',
+    text: 'download iOS',
     url: 'https://itunes.apple.com/app/flinder-find-perfect-activities/id977333323',
+},
+{
+    id: 'download-android',
+    text: 'download Android',
+    url: 'https://play.google.com/store/apps/details?id=com.flinder',
 },
 {
     id: 'visit-website',
@@ -15,7 +20,7 @@ export const FLINDER_LINKS = [{
 
 export const BEATSWITCH_TITLE = 'Beatswitch';
 export const BEATSWITCH_ICON = 'beatswitch-icon.png';
-export const BEATSWITCH_SUBTITLE = 'Front-end Development, UI/UX Design';
+export const BEATSWITCH_SUBTITLE = 'Front-end Development (React), UI/UX Design';
 export const BEATSWITCH_DESCRIPTION = `The world’s leading music festival management software. Core activities include building new features for Beatswitch's web app, maintaining existing functionality, redesigning UI and building a design system.`;
 export const BEATSWITCH_LINKS = [{
     id: 'visit-website',
