@@ -4,13 +4,8 @@ export const FLINDER_SUBTITLE = 'Personal Project';
 export const FLINDER_DESCRIPTION = 'Flinder is a free smart app that helps you find top things to do nearby, based on your location, weather conditions and time. Written in React Native.';
 export const FLINDER_LINKS = [{
     id: 'download-ios',
-    text: 'download iOS',
+    text: 'download for iOS',
     url: 'https://itunes.apple.com/app/flinder-find-perfect-activities/id977333323',
-},
-{
-    id: 'download-android',
-    text: 'download Android',
-    url: 'https://play.google.com/store/apps/details?id=com.flinder',
 },
 {
     id: 'visit-website',
