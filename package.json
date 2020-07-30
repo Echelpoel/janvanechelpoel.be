@@ -1,9 +1,9 @@
 {
     "name": "janvanechelpoel",
     "dependencies": {
-        "next": "^7.0.2",
-        "react": "^16.6.3",
-        "react-dom": "^16.6.3"
+        "next": "^9.5.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
     },
     "devDependencies": {
         "babel-plugin-module-resolver": "^3.1.1"
