@@ -19,6 +19,7 @@ const Contact = () => (
             section {
                 background-color: #FFFFFF;
                 padding-bottom: 10rem;
+                padding-top: 10rem;
                 text-align: center;
             }
 

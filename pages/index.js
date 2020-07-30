@@ -5,7 +5,6 @@ import FlinderImages from 'components/projects/FlinderImages'
 import BeatswitchImages from 'components/projects/BeatswitchImages'
 import InnovationWallImages from 'components/projects/InnovationWallImages'
 import Contact from 'components/Contact'
-import Clients from 'components/Clients'
 import Footer from 'components/Footer'
 import {
     FLINDER_TITLE,
@@ -56,7 +55,6 @@ class HomePage extends React.Component {
                         links={INNOVATIONWALL_LINKS}
                     />
                 </div>
-                <Clients />
                 <Contact />
                 <Footer />
                 <style jsx>{`
