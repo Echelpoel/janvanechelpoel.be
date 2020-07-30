@@ -13,4 +13,4 @@ export const SOCIAL_LINKS = [{
     url: 'https://dribbble.com/echlpl',
 }];
 export const EMAIL = 'hello@janvanechelpoel.be';
-export const COPYRIGHT_TEXT = '© 2018—Built in Antwerp, BE';
+export const COPYRIGHT_TEXT = `© ${new Date().getFullYear()}—Built in Antwerp, BE`;
