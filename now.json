@@ -3,6 +3,6 @@
     "name": "janvanechelpoel",
     "alias": "janvanechelpoel.be",
     "builds": [
-        { "src": "next.config.js", "use": "@now/next" }
+        { "src": "package.json", "use": "@now/next" }
     ]
 }
